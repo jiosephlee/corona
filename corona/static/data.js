@@ -1,5 +1,3 @@
-
-
 /* chart.js chart examples */
 const canvas = document.getElementById('chart');
 const ctx = canvas.getContext('2d');
@@ -15,7 +13,7 @@ var chartData = {
     backgroundColor: 'transparent',
     borderColor: colors[0],
     borderWidth: 2,
-    pointRadius: 2,
+    pointRadius: 4,
     pointBackgroundColor: colors[1]
   }]
 };
