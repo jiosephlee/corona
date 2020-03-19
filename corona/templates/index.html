@@ -4,6 +4,20 @@
 
 <html>
 
+  <style>
+    .live{
+      color: red;
+      border-color: red;
+      padding: 0.2em 0.5em 0.2em 0.5em
+    }
+    .cases{
+      padding: 0.2em 0.5em 0.2em 0.5em
+    }
+    .expand{
+      background-color: #FFF2EF;
+      margin-bottom:1em
+    }
+  </style>
   <head>
       <meta charset="UTF-8">
 
@@ -12,17 +26,26 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
       <link rel="shortcut icon" href="">
   </head>
-  <body>
+
+  <body style="background-color:#FFF9F8;">
+    <nav class="navbar navbar-expand-sm navbar-light expand">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="/"><b>The Coronavirus in NYC</b></a>
+      </div>
+    </nav>
     <div class="container">
-        <div class="row my-1">
-            <div class="col">
-                <h4>Covid-19 Growth in NYC </h4><a href="https://www1.nyc.gov/site/doh/health/health-topics/coronavirus.page">Data Source</a>
-            </div>
+        <div class="row my-2">
+          <div class = "col-sm-0 live border rounded">
+            LIVE
+          </div>
+          <div class = "col-sm-11 cases">
+            <b>2,009 cases in NYC</b>
+          </div>
         </div>
         <div class="row my-1">
                 <div class="card">
                     <div class="card-body">
-                        <canvas id="chart" width="2500" height="1000"></canvas>
+                        <canvas id="chart" width="2500" height="1000" style="padding-top:-3em; margin-top:-1em"></canvas>
                     </div>
                 </div>
         </div>
