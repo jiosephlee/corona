@@ -1,10 +1,18 @@
 from flask import Flask, request, render_template, redirect, url_for, session, flash
+from datetime import datetime, timedelta
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
+    now = datetime.now()
+    if (int(now.strftime("%H")) == 12):
+        current_time = now.strftime("%H:%M:%S") + " AM"
+    elif (int(now.strftime("%H")) > 12):
+        current_time = str(int(now.strftime("%H"))%12) + now.strftime(":%M:%S") + " PM"
+    else:
+        current_time = now.strftime("%H:%M:%S") + " AM"
+    return render_template('index.html',current_time = current_time)
 
 if __name__ == "__main__":
     app.debug = True

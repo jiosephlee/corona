@@ -7,7 +7,7 @@
   <style>
     .live{
       color: red;
-      border-color: red;
+      border-color: #FFF2EF;
       padding: 0.2em 0.5em 0.2em 0.5em
     }
     .cases{
@@ -30,16 +30,16 @@
   <body style="background-color:#FFF9F8;">
     <nav class="navbar navbar-expand-sm navbar-light expand">
       <div class="navbar-header">
-          <a class="navbar-brand" href="/"><b>The Coronavirus in NYC</b></a>
+          <a class="navbar-brand" href="/"><b>The Coronavirus Outbreak in NYC</b></a>
       </div>
     </nav>
     <div class="container">
         <div class="row my-2">
-          <div class = "col-sm-0 live border rounded">
+          <div class = "col-sm-0 live border border-danger rounded">
             LIVE
           </div>
           <div class = "col-sm-11 cases">
-            <b>3,615 confirmed cases</b>
+            <b>3,954 confirmed cases</b> <span style="color:#A9A9A9">as of {{current_time}}</span>
           </div>
         </div>
         <div class="row my-1">
