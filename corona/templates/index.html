@@ -10,6 +10,8 @@
       border-color: #FFF2EF;
       padding: 0.2em 0.5em 0.2em 0.5em
     }
+    .curve{
+    }
     .cases{
       padding: 0.2em 0.5em 0.2em 0.5em
     }
@@ -39,13 +41,23 @@
             LIVE
           </div>
           <div class = "col-sm-11 cases">
-            <b>12,339 confirmed cases and 99 deaths</b> <span style="color:#A9A9A9">as of {{current_time}}</span>
+            <b>17,856 confirmed cases and 192 deaths</b> <span style="color:#A9A9A9">as of {{current_time}}</span>
           </div>
         </div>
+    </div>
+    <hr style="border: 1.2px solid; color: #a6a6a6;"/>
+    <div class="container">
         <div class="row my-1">
                 <div class="card">
                     <div class="card-body">
                         <canvas id="chart" width="2500" height="1000" style="padding-top:-3em; margin-top:-1em"></canvas>
+                    </div>
+                </div>
+        </div>
+        <div class="row my-1">
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="chart2" width="2500" height="1000" style="padding-top:-3em; margin-top:-1em"></canvas>
                     </div>
                 </div>
         </div>

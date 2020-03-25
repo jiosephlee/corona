@@ -9,11 +9,11 @@ def index():
     eastern = timezone('US/Eastern')
     now = datetime.now(eastern)
     if (int(now.strftime("%H")) == 12):
-        current_time = now.strftime("%H:%M:%S") + " AM"
+        current_time = now.strftime("%H:") + str(int(now.strftime("%M"))-2) + " PM"
     elif (int(now.strftime("%H")) > 12):
-        current_time = str(int(now.strftime("%H"))%12) + now.strftime(":%M:%S") + " PM"
+        current_time = str(int(now.strftime("%H"))%12) +  str(int(now.strftime("%M"))-2) + " PM"
     else:
-        current_time = now.strftime("%H:%M:%S") + " AM"
+        current_time = now.strftime("%H:") + str(int(now.strftime("%M"))-2) + " AM"
     return render_template('index.html',current_time = current_time)
 
 if __name__ == "__main__":
