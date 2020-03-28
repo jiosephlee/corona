@@ -22,7 +22,7 @@ var casesData = {
 var deathsData = {
   labels: ["3/1","3/2","3/3","3/4","3/5","3/6","3/7","3/8", "3/9","3/10", "3/11","3/12", "3/13", "3/14", "3/15", "3/16", "3/17","3/18","3/19","3/20","3/21","3/22","3/23","3/24","3/25","3/26","3/27"],
   datasets:[{
-    data: [null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,19, 26, 43,60,81,125,192,280,366,450]
+    data: [null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,19, 26, 43,60,81,125,192,280,366,450],
     backgroundColor: 'transparent',
     borderColor: "#000000",
     borderWidth: 2,
