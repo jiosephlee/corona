@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HTML file for JavaScript work 00 -->
+
+<html>
+
+  <style>
+    .live{
+      color: red;
+      border-color: #FFF2EF;
+      padding: 0.2em 0.5em 0.2em 0.5em
+    }
+    .curve{
+    }
+    .cases{
+      padding: 0.2em 0.5em 0.2em 0.5em
+    }
+    .expand{
+      background-color: #FFF2EF;
+      margin-bottom:1em
+    }
+  </style>
+  <head>
+      <meta charset="UTF-8">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <link rel="shortcut icon" href="">
+  </head>
+
+  <body style="background-color:#FFF9F8;">
+    <nav class="navbar navbar-expand-sm navbar-light expand">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="/"><b>The Coronavirus Outbreak in NYC</b></a>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="row my-2">
+          <div class = "col-sm-0 live border border-danger rounded">
+            LIVE
+          </div>
+          <div class = "col-sm-11 cases">
+            <b>36,221 confirmed cases and 790 deaths</b> <span style="color:#A9A9A9">as of {{current_time}}</span>
+          </div>
+        </div>
+    </div>
+    <hr style="border: 1.2px solid; color: #a6a6a6;"/>
+    <div class="container">
+        <div class="row my-1">
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="chart" width="2500" height="1000" style="padding-top:-3em; margin-top:-1em"></canvas>
+                    </div>
+                </div>
+        </div>
+        <div class="row my-1">
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="chart2" width="2500" height="1000" style="padding-top:-3em; margin-top:-1em"></canvas>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="static/data.js"></script>
+  </body>
+</html>
